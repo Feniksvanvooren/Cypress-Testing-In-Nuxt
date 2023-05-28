@@ -1,0 +1,39 @@
+// *********************************
+// *** Create Transition Classes ***
+// *********************************
+@mixin make-transitions($base, $enterDelay: false) {
+  .#{$base}-enter-active,
+  .#{$base}-leave-active {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  // Entrance/Exit for the base class
+  .#{$base}-enter-active {
+    animation-name: #{$base}In;
+    @if $enterDelay {
+      animation-delay: 0.1s;
+    }
+  }
+
+  .#{$base}-leave-active {
+    animation-name: #{$base}Out;
+  }
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    bottom: 0;
+  }
+}

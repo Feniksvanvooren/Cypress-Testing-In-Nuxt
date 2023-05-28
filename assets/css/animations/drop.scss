@@ -1,0 +1,27 @@
+// $animationDuration: 0.5s; // specify animation duration. Default value: 1s
+// @import 'node_modules/vue2-animate/src/sass/vue2-animate.scss';
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes dropOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@include make-transitions(drop);

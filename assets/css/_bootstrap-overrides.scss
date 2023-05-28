@@ -1,0 +1,41 @@
+.btn {
+  transition: 300ms all ease-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-link {
+  //border-bottom: 1px solid;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-variant(
+      transparent,
+      $value,
+      $value,
+      $value,
+      $value,
+      #fff,
+      transparent,
+      $value,
+      $value,
+      transparent,
+      $value,
+      $value
+    );
+    position: relative;
+    border-width: 1px;
+  }
+}
+.btn-outline-white {
+  @include button-variant(transparent, #fff, #fff, #fff, #fff, $primary);
+}
+
+strong {
+  font-weight: bold;
+}
