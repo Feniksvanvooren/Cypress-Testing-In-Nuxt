@@ -1,0 +1,234 @@
+$enable-responsive-font-sizes: true;
+
+$header-height: 80px !default;
+$base-padding: 1rem !default;
+$base-padding-lg: 1.6rem !default;
+
+$repeat-margin: 2rem;
+
+$floating-box-shadow: 0px 0px 12px #0000002e !default;
+
+$primary: #00f597;
+$secondary: #119b66;
+$white: #fff;
+$silver: #e8e8e8;
+$light: #f6f6f6;
+$gray: #d9d9d9;
+$darker: #e7e7e7;
+$mid: #6f6f6f;
+$dark: #1e1e1e;
+$black: #0a0a0a;
+
+$section-border-radius: 21px;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'white': $white,
+  'gray': $gray,
+  'silver': $silver,
+  'darker': $darker,
+  'light': $light,
+  'mid': $mid,
+  'dark': $dark,
+  'black': $black,
+);
+
+$font-family-base: 'Space Grotesk', sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800; // currently not included in Google Fonts package (see _app.jsx)
+$font-weight-base: $font-weight-light;
+
+$headings-font-family: $font-family-base;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+
+$font-size-base: 1rem;
+$small-font-size: 0.75rem;
+
+$body-color: $dark;
+$body-bg: $gray;
+
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.6;
+$h4-font-size: $font-size-base * 1.55;
+$h5-font-size: $font-size-base * 0.875;
+$h6-font-size: $font-size-base * 0.85;
+
+$h2-color: $body-color !default;
+$h3-color: $body-color !default;
+$h4-color: $body-color !default;
+$h5-color: $body-color !default;
+$h6-color: $body-color !default;
+
+$border-radius: 3px;
+$border-radius-sm: $border-radius;
+$border-radius-lg: $border-radius;
+$border-radius-xl: 8px;
+
+$link-decoration: underline;
+$link-hover-decoration: none;
+$link-color: $black;
+$link-hover-color: $primary;
+
+$container-padding-x: 1.25rem;
+
+$wrap-max-widths: (
+  sm: 750px,
+  md: 1100px,
+  lg: 1200px,
+  xl: 1400px,
+  xxl: 1900px,
+);
+
+$input-border-color: #cccccc;
+$input-border-width: 1px;
+$input-bg: $white;
+$input-padding-y: 0.5rem;
+$input-padding-x: 0.7rem;
+$input-border-radius: 8px;
+$input-height: auto;
+// $input-font-size: .9rem;
+$input-placeholder-color: $body-color;
+
+$table-border-width: 0;
+$table-cell-padding: 0.7rem;
+$table-accent-bg: rgba($primary, 0.1);
+
+$badge-padding-y: 6px;
+$badge-padding-x: 9px;
+$badge-font-size: 12px;
+$badge-font-weight: 400;
+$badge-pill-padding-x: $badge-padding-x;
+$badge-pill-padding-y: $badge-padding-y;
+
+$custom-file-text: (
+  nl: 'Kies bestand',
+  fr: 'Choisir le fichier',
+) !default;
+
+$btn-border-width: 1px;
+$btn-border-radius: 8px;
+$btn-font-weight: 500;
+$btn-line-height: 1;
+$btn-padding-y: 0.5rem;
+$btn-padding-x: $input-padding-x;
+$btn-font-size: 0.9rem;
+$input-btn-font-size-lg: $font-size-base * 1.15;
+$btn-active-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+
+$btn-hover-bg-shade-amount: 30%;
+$btn-hover-bg-tint-amount: 30%;
+$btn-disabled-opacity: 0.3;
+
+$custom-control-gutter: 0.8rem;
+$custom-control-indicator-size: 1.4rem;
+$custom-control-indicator-checked-box-shadow: 0 0 0 2px #fff inset;
+
+$custom-checkbox-indicator-icon-checked: none;
+
+$navbar-width: 300px;
+$navbar-padding-y: 1rem;
+
+$modal-content-border-radius: 0;
+$modal-md: 600px;
+
+$spacer: 0.5rem;
+$spacers: (
+  0: 0,
+  1: (
+    $spacer,
+  ),
+  2: (
+    $spacer * 2,
+  ),
+  3: $spacer * 3,
+  4: (
+    $spacer * 4,
+  ),
+  5: (
+    $spacer * 5,
+  ),
+  6: (
+    $spacer * 6,
+  ),
+  7: (
+    $spacer * 7,
+  ),
+  8: (
+    $spacer * 8,
+  ),
+  9: (
+    $spacer * 9,
+  ),
+  10: (
+    $spacer * 10,
+  ),
+  11: (
+    $spacer * 11,
+  ),
+  12: (
+    $spacer * 12,
+  ),
+  13: (
+    $spacer * 13,
+  ),
+  14: (
+    $spacer * 14,
+  ),
+  15: (
+    $spacer * 15,
+  ),
+  16: (
+    $spacer * 16,
+  ),
+  17: (
+    $spacer * 17,
+  ),
+  18: (
+    $spacer * 18,
+  ),
+  19: (
+    $spacer * 19,
+  ),
+  20: (
+    $spacer * 20,
+  ),
+);
+
+/*** EASING ***/
+
+$linear: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+$ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+$ease-in: cubic-bezier(0.42, 0, 1, 1);
+$ease-out: cubic-bezier(0, 0, 0.58, 1);
+$ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+$easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+$easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+$easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+$easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);

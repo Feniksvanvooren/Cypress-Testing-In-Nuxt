@@ -1,0 +1,72 @@
+@import './_variables.scss';
+@import './_bootstrap.scss';
+@import './_bootstrap-overrides.scss';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-content {
+  // flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.container-wrap {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: calc(100% - 2rem);
+}
+
+.site-wrap {
+  background-color: $white;
+  border-radius: $section-border-radius;
+}
+
+//subtitle class
+.subtitle {
+  color: $mid !important;
+  text-transform: uppercase;
+  @include font-size(0.875rem);
+  font-weight: 500;
+  line-height: 1.22rem;
+  letter-spacing: 2px;
+  &:before {
+    content: '/ ';
+  }
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.h5{
+  text-transform: uppercase;
+  color: $mid;
+  letter-spacing: 0.05rem;
+}
+
+.border-radius {
+  border-radius: $section-border-radius;
+}
+.reveal {
+  visibility: hidden;
+}
+:root {
+  // Set current container width as CSS variable to use in CSS properties.
+  --container-width: 0;
+
+  @each $breakpoint, $width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      --container-width: #{$width};
+    }
+  }
+}
