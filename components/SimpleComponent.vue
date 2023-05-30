@@ -1,20 +1,20 @@
 <template>
   <div class="p-4 mx-auto border-radius bg-light">
     <div class="py-4 px-2 border-radius">
-      <h2 data-testid="username" class="text-2xl">Welcome {{ username }}!</h2>
+      <h2 id="username" class="text-2xl">Welcome {{ username }}!</h2>
       <div>
         <div class="distract">
-          <h3 data-testid="nickname">AKA : {{ nickname }}</h3>
+          <h3 id="nickname">AKA : {{ nickname }}</h3>
         </div>
         <button
           class="btn btn-primary"
           @click="showContact = !showContact"
-          data-testid="contact-btn"
+          id="contact-btn"
         >
           Reveal
         </button>
       </div>
-      <div v-if="showContact" data-testid="contact-info">
+      <div v-if="showContact" id="contact-info">
         Userinfo
         <ul>
           <li><bold>Username: </bold>User</li>

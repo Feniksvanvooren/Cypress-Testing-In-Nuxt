@@ -5,6 +5,8 @@
       v-if="!Submitted"
       class="col-xl-6 m-auto d-flex-column align-items-center"
     >
+      <h2 data-testid="username" class="text-2xl">Login Form</h2>
+
       <div class="form-group col-xl-6 m-auto">
         <label for="exampleInputEmail1">Email address</label>
         <input
@@ -29,7 +31,7 @@
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
 
-      <div class="form-group col-xl-6 m-auto">
+      <div class="col-xl-6 m-auto">
         <button type="submit" class="btn btn-primary align-self-center">
           Submit
         </button>
@@ -37,10 +39,12 @@
     </form>
     <div v-else>
       <div class="d-flexflex-column">
-        <div>Merci voor contact</div>
+        <h2 data-testid="username" class="text-2xl">
+          Thanks for completing the example!
+        </h2>
         <button
           @click="Submitted = false"
-          type="button"
+          type="submit"
           class="btn btn-primary"
         >
           Reset Form

@@ -2,8 +2,9 @@
   <div class="site-content">
     <div class="site-wrap container-wrap">
       <div class="container">
-        <h1>Components page</h1>
-        <SwitchButton :options="buttonOptions" class="py-2 border-radius" />
+        <div class="border-radius my-5 col-10 m-auto">
+          <SimpleComponent username="Mr Astley" nickname="Rick 'Roll' Astley" />
+        </div>
       </div>
     </div>
   </div>
