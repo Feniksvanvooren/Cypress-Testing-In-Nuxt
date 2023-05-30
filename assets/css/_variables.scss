@@ -8,17 +8,14 @@ $repeat-margin: 2rem;
 
 $floating-box-shadow: 0px 0px 12px #0000002e !default;
 
-$primary: #f59600;
-$secondary: #cc8e2b;
+$primary: #00f597;
+$secondary: #119b66;
 $white: #fff;
-$dash: #f0f0f0;
-$gray: #d9d9d9;
 $silver: #e8e8e8;
 $light: #f6f6f6;
+$gray: #d9d9d9;
 $darker: #e7e7e7;
 $mid: #6f6f6f;
-$gray-ba: #bababa;
-$gray-2d: #2d2d2d;
 $dark: #1e1e1e;
 $black: #0a0a0a;
 
@@ -29,12 +26,10 @@ $theme-colors: (
   'secondary': $secondary,
   'white': $white,
   'gray': $gray,
-  'gray-ba': $gray-ba,
   'silver': $silver,
   'darker': $darker,
   'light': $light,
   'mid': $mid,
-  'gray-2d': $gray-2d,
   'dark': $dark,
   'black': $black,
 );
@@ -55,7 +50,7 @@ $font-size-base: 1rem;
 $small-font-size: 0.75rem;
 
 $body-color: $dark;
-$body-bg: $black;
+$body-bg: $gray;
 
 $h1-font-size: $font-size-base * 3.5;
 $h2-font-size: $font-size-base * 2.25;
@@ -63,13 +58,6 @@ $h3-font-size: $font-size-base * 1.6;
 $h4-font-size: $font-size-base * 1.55;
 $h5-font-size: $font-size-base * 0.875;
 $h6-font-size: $font-size-base * 0.85;
-
-/* 
-$h1-line-height: 1.153846153846154 !important;
-$h2-line-height: 1.18;
-$h3-line-height: 1.22;
-$h4-line-height: 0.67;
-$h5-line-height: 0.73; */
 
 $h2-color: $body-color !default;
 $h3-color: $body-color !default;

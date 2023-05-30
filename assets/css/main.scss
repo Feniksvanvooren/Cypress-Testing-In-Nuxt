@@ -1,13 +1,6 @@
-@import './variables';
-@import './bootstrap';
-@import './bootstrap-overrides';
-@import './utils';
-@import './mixins';
-
-@import './animations/page';
-@import './animations/nav';
-@import './animations/drop';
-@import './animations/fade';
+@import './_variables.scss';
+@import './_bootstrap.scss';
+@import './_bootstrap-overrides.scss';
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -34,7 +27,7 @@ body {
 }
 
 .site-wrap {
-  background-color: $dash;
+  background-color: $white;
   border-radius: $section-border-radius;
 }
 
@@ -61,6 +54,12 @@ body {
   letter-spacing: 0.05rem;
 }
 
+.border-radius {
+  border-radius: $section-border-radius;
+}
+.reveal {
+  visibility: hidden;
+}
 :root {
   // Set current container width as CSS variable to use in CSS properties.
   --container-width: 0;

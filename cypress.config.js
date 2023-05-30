@@ -1,10 +1,21 @@
-const { defineConfig } = require("cypress");
-
-module.exports = defineConfig({
+module.exports = {
   component: {
     devServer: {
       framework: "nuxt",
       bundler: "webpack",
     },
+    video: false,
+    screenshots: false,
   },
-});
+
+  e2e: {
+    setupNodeEvents(on, config) {
+
+    },
+    scrollBehavior: 'center',
+    experimentalStudio: true,
+    video: false,
+    screenshots: false,
+  },
+
+};
