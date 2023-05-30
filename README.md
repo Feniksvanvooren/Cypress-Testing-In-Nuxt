@@ -128,6 +128,12 @@ git push --no-verify
 git commit -am "test commit" --no-verify
 ```
 
+## Future Updates / How to contribute
+
+- Add Snapshot tests
+- Add random generating of filled in values
+- More ideas? let me know!
+
 ## Happy Testing !
 
 ### Greetz
