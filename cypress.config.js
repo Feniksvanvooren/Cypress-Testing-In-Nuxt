@@ -4,6 +4,7 @@ module.exports = {
       framework: "nuxt",
       bundler: "webpack",
     },
+    scrollBehavior: 'center',
     video: false,
     screenshots: false,
   },

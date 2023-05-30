@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "cypress:open": "cypress open",
-    "cypress:run-e2e": "cypress run --config --e2e  video=false screenshotOnRunFailure=false ",
+    "cypress:run-e2e": "cypress run --config --e2e  ",
     "cypress:run-component": "npx cypress run --component",
     "echo:test-commit": "echo 'PRE-COMMIT hook'"
   },
